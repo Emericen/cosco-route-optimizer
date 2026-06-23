@@ -1,0 +1,265 @@
+COSCO 全航线清单（按大类/航线组）  抓取日期 2026-06-23
+数据来源: world.lines.coscoshipping.com 航线查询工具
+============================================================
+
+1. 跨太平洋航线 (Trans-Pacific) — 共 26 条航线，3 组   [tab route/11]
+------------------------------------------------------------
+  【远东-美西南】 11 条:
+      1. 华南SEA3  (code: SEA3)
+      2. 华北CEN  (code: CEN)
+      3. 华东AAC  (code: AAC)
+      4. 华东AAC2  (code: AAC2)
+      5. 华东AAC4  (code: AAC4)
+      6. 华南AAS2  (code: AAS2)
+      7. 华南AAS3  (code: AAS3)
+      8. 华南AAS4  (code: AAS4)
+      9. 华南SEA  (code: SEA)
+     10. 东南亚SEA2  (code: SEA2)
+     11. JPSW  (code: JPSW)
+  【远东-美西北】 5 条:
+     12. CPV  (code: CPV)
+     13. CPNW  (code: CPNW)
+     14. MPNW  (code: MPNW)
+     15. EPNW  (code: EPNW)
+     16. OPNW  (code: OPNW)
+  【远东-美东/美湾】 10 条:
+     17. 美东AWE1  (code: AWE1)
+     18. 美东AWE2  (code: AWE2)
+     19. 美东AWE3  (code: AWE3)
+     20. 美东AWE4  (code: AWE4)
+     21. 美东AWE5  (code: AWE5)
+     22. 美湾GME  (code: GME)
+     23. 美湾GME2  (code: GME2)
+     24. 美东AWE7  (code: AWE7)
+     25. IPE  (code: IPE)
+     26. IPE2  (code: IPE2)
+
+
+2. 欧洲航线 (Europe) — 共 13 条航线，4 组   [tab route/12]
+------------------------------------------------------------
+  【远东-西北欧】 7 条:
+      1. AEU1  (code: AEU1)
+      2. AEU2  (code: AEU2)
+      3. AEU3  (code: AEU3)
+      4. AEU5  (code: AEU5)
+      5. AEU6  (code: AEU6)
+      6. AEU7  (code: AEU7)
+      7. AEU9  (code: AEU9)
+  【远东-地中海】 4 条:
+      8. AEM1  (code: AEM1)
+      9. AEM2  (code: AEM2)
+     10. AEM3  (code: AEM3)
+     11. AEM6  (code: AEM6)
+  【印巴/中东-西北欧】 1 条:
+     12. EPIC3  (code: EPIC3)
+  【印巴/中东-地中海】 1 条:
+     13. GEM  (code: GEM)
+
+
+3. 欧地支线 (Europe Feeder) — 共 24 条航线，3 组   [tab route/13]
+------------------------------------------------------------
+  【欧洲支线】 10 条:
+      1. 波罗的海英国支线  (code: BALT)
+      2. 德国瑞典支线1  (code: GSX1)
+      3. 德国波罗的海支线2  (code: GBX2)
+      4. 爱尔兰支线INX1  (code: INX1)
+      5. 爱尔兰支线INX4  (code: INX4)
+      6. 波兰立陶宛支线PLX1  (code: PLX1)
+      7. 波罗的海支线 PFX  (code: PFX)
+      8. 鹿特丹芬兰支线3线RFS3  (code: RFS3)
+      9. 西法比荷支线NBX  (code: NBX)
+     10. 波罗的海支线GBX  (code: GBX)
+  【地中海支线】 12 条:
+     11. 希腊康斯坦萨支线  (code: PCE)
+     12. 希腊阿尔及利亚支线  (code: PAE)
+     13. 希腊以色列支线  (code: PIE)
+     14. 亚得里亚海-地东支线AIG  (code: AIG)
+     15. 地中海支线LGX1  (code: LGX1)
+     16. 亚得里亚海-地东支线AGT  (code: AGT)
+     17. 拿波里支线PNX  (code: PNX)
+     18. 地中海支线MFS  (code: MFS)
+     19. 黑海土耳其支线PBX  (code: PBX)
+     20. 亚得里亚海-地东支线PRS  (code: PRS)
+     21. 地中海支线TSM  (code: TSM)
+     22. 亚得里亚海-地东支线AGE  (code: AGE)
+  【西北欧-地中海线】 2 条:
+     23. 西北欧地中海线NET  (code: NET)
+     24. 西北欧地中海2线NET2  (code: NET2)
+
+
+4. 亚太航线 (Asian Pacific) — 共 27 条航线，7 组   [tab route/14]
+------------------------------------------------------------
+  【远东-南太】 2 条:
+      1. 中国-南太线CSP  (code: CSP)
+      2. 中国-南太线CAP  (code: CAP)
+  【东北亚-澳洲】 3 条:
+      3. A3N  (code: A3N)
+      4. A3C  (code: A3C)
+      5. A3S  (code: A3S)
+  【东南亚-澳洲】 4 条:
+      6. 东南亚-澳洲线 ASAL  (code: ASAL)
+      7. 东南亚-澳洲ASAX  (code: ASAX)
+      8. 东南亚-澳洲AAA2  (code: AAA2)
+      9. 东南亚-澳洲AAA1  (code: AAA1)
+  【东北亚-新西兰】 2 条:
+     10. 新日韩香新线JKN  (code: JKN)
+     11. 中国-新西兰线CNS  (code: CNS)
+  【新西兰】 2 条:
+     12. 东南亚-新西兰线NZS  (code: NZS)
+     13. 澳洲-新西兰线ANE  (code: ANE)
+  【波湾线】 12 条:
+     14. 科威特阿布扎比快航KAX  (code: KAX)
+     15. MEX4  (code: MEX4)
+     16. MEX5  (code: MEX5)
+     17. MEX  (code: MEX)
+     18. AGI2  (code: AGI2)
+     19. 巴比伦阿联酋快航BUX  (code: BUX)
+     20. 阿曼阿联酋快运OUX  (code: OUX)
+     21. AGI  (code: AGI)
+     22. KGS  (code: KGS)
+     23. AG2  (code: AG2)
+     24. ASX  (code: ASX)
+     25. MEX6  (code: MEX6)
+  【红海线】 2 条:
+     26. RES1  (code: RES1)
+     27. RES2  (code: RES2)
+
+
+5. 拉非航线 (Latin America/Africa) — 共 27 条航线，9 组   [tab route/15]
+------------------------------------------------------------
+  【远东-南非】 3 条:
+      1. ZAX1  (code: ZAX1)
+      2. ZAX2  (code: ZAX2)
+      3. ZAX3  (code: ZAX3)
+  【远东-西非】 4 条:
+      4. WAX1  (code: WAX1)
+      5. WAX3  (code: WAX3)
+      6. WAX2  (code: WAX2)
+      7. WAX4  (code: WAX4)
+  【欧地-西非线】 2 条:
+      8. 欧地西非线MWAX  (code: MWAX)
+      9. 欧地西非线NEWA  (code: NEWA)
+  【远东-东非】 5 条:
+     10. 莫桑比克支线EMS  (code: EMS)
+     11. 远东-东非线EAX1  (code: EAX1)
+     12. 远东-东非线EAX3  (code: EAX3)
+     13. 西亚印度-东非EAX6  (code: EAX6)
+     14. 远东-东非线EAX2  (code: EAX2)
+  【远东-南美东线】 2 条:
+     15. 远东/南美东一线ESA  (code: ESA)
+     16. 远东/南美东二线ESA2  (code: ESA2)
+  【欧洲-南美东】 1 条:
+     17. ESE2  (code: ESE2)
+  【远东-南美西】 6 条:
+     18. 远东/南美西线WSA  (code: WSA)
+     19. 远东/南美西线二线WSA2  (code: WSA2)
+     20. 远东/南美西线三线WSA3  (code: WSA3)
+     21. 远东/南美西线四线WSA4  (code: WSA4)
+     22. 远东/南美西线五线WSA5  (code: WSA5)
+     23. 远东/南美西线八线WSA8  (code: WSA8)
+  【远东-加勒比】 3 条:
+     24. CAX1  (code: CAX1)
+     25. AWE1-ACA  (code: AWE1-ACA)
+     26. AWE4-ACA  (code: AWE4-ACA)
+  【欧洲-南美西】 1 条:
+     27. EWX  (code: EWX)
+
+
+6. 东南亚及南亚航线 (Southeast & South Asia) — 共 55 条航线，5 组   [tab route/16]
+------------------------------------------------------------
+  【泰越柬】 14 条:
+      1. CV2-N  (code: CV2-N)
+      2. CYH  (code: CYH)
+      3. CV2-C  (code: CV2-C)
+      4. RBC2  (code: RBC2)
+      5. JCV  (code: JCV)
+      6. CVX1  (code: CVX1)
+      7. CTJ  (code: CTJ)
+      8. CV1  (code: CV1)
+      9. NCT  (code: NCT)
+     10. CV3  (code: CV3)
+     11. CT2  (code: CT2)
+     12. CHL-V  (code: CHL-V)
+     13. JTV  (code: JTV)
+     14. CSX1  (code: CSX1)
+  【中东印巴】 13 条:
+     15. CIX3  (code: CIX3)
+     16. CI1  (code: CI1)
+     17. AS2  (code: AS2)
+     18. PMX  (code: PMX)
+     19. AIS  (code: AIS)
+     20. FCS  (code: FCS)
+     21. TCX  (code: TCX)
+     22. FCE  (code: FCE)
+     23. YCX  (code: YCX)
+     24. SCX2  (code: SCX2)
+     25. AS1  (code: AS1)
+     26. SKX1  (code: SKX1)
+     27. CPX  (code: CPX)
+  【韩国】 7 条:
+     28. AK3-1  (code: AK3-1)
+     29. AK3-2  (code: AK3-2)
+     30. AK5  (code: AK5)
+     31. AK6  (code: AK6)
+     32. AK12  (code: AK12)
+     33. AK24  (code: AK24)
+     34. AK25  (code: AK25)
+  【印尼菲】 14 条:
+     35. YIX  (code: YIX)
+     36. CSE  (code: CSE)
+     37. CKI  (code: CKI)
+     38. CTI1  (code: CTI1)
+     39. CP8  (code: CP8)
+     40. JPI  (code: JPI)
+     41. KTX3  (code: KTX3)
+     42. CIT  (code: CIT)
+     43. SIS  (code: SIS)
+     44. CPF  (code: CPF)
+     45. NIS  (code: NIS)
+     46. NCP  (code: NCP)
+     47. CP2  (code: CP2)
+     48. YPX  (code: YPX)
+  【新马缅】 7 条:
+     49. CME  (code: CME)
+     50. PA1  (code: PA1)
+     51. JSM  (code: JSM)
+     52. KCM2  (code: KCM2)
+     53. YGX  (code: YGX)
+     54. KTX1  (code: KTX1)
+     55. QVS  (code: QVS)
+
+
+7. 大西洋航线 (Trans-Atlantic) — 共 7 条航线，1 组   [tab route/17]
+------------------------------------------------------------
+  【跨大西洋线】 7 条:
+      1. 西北欧-北美线  (code: GEX1)
+      2. 西北欧-北美2线  (code: GEX2)
+      3. 跨大西洋线EMA  (code: EMA)
+      4. 地中海美东线MENA  (code: MENA)
+      5. 跨大西洋ELSA  (code: ELSA)
+      6. 跨大西洋TAE  (code: TAE)
+      7. 跨大西洋EAG  (code: EAG)
+
+
+8. 中美洲航线 (Latin America Regional Service) — 共 14 条航线，3 组   [tab route/18]
+------------------------------------------------------------
+  【太平洋侧区域航线】 5 条:
+      1. WSX  (code: WSX)
+      2. GCO  (code: GCO)
+      3. MCX  (code: MCX)
+      4. CHX2  (code: CHX2)
+      5. CHX  (code: CHX)
+  【加勒比侧区域航线】 6 条:
+      6. PAH  (code: PAH)
+      7. MIX  (code: MIX)
+      8. BZX2  (code: BZX2)
+      9. CIXX  (code: CIXX)
+     10. ECX  (code: ECX)
+     11. PCX  (code: PCX)
+  【南北美区域航线】 3 条:
+     12. BZX  (code: BZX)
+     13. NEWS  (code: NEWS)
+     14. GCX  (code: GCX)
+
+============================================================
+总计 TOTAL: 193 条唯一航线 / 8 大类 / 35 航线组
