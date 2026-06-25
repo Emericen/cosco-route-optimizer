@@ -18,7 +18,7 @@
 | Python | 3.10.12 | 生成 Excel、运行路线查询 |
 | openpyxl | 3.1.5 | 写 .xlsx |
 
-> `route_finder.py` 仅依赖 Python 标准库，无需安装任何包。
+> `quote_optimizer.py` 仅依赖 Python 标准库，无需安装任何包。
 
 ## 抓取过程
 
@@ -38,8 +38,8 @@
 3. **两轮抓取：**第一轮抓 `callPort` + `advantage`（→ `cosco_routes_raw.json`）；
    后来补抓 `loopExport`/`loopImport`（→ `cosco_transit_raw.json`）。
 
-4. **生成交付物：**`build_xlsx.py` 把两个 JSON 合成 4 表 Excel；
-   `route_finder.py` 把 `cosco_routes_raw.json` 构建成港口图做最短路径查询。
+4. **生成交付物：**`build_master.py` 把两个 JSON + 运价 CSV 合成单一工作簿(5 表);
+   `quote_optimizer.py` 把 `cosco_routes_raw.json` 构建成港口图做 A→B 多目标(价格/天数)查询。
 
 ## 踩坑与经验
 
@@ -69,8 +69,8 @@
 5. **港口名碎片化，必须归一。** 港口字段里同一个港口存在多种写法：
    `ROTTERDAM` / `Rotterdam` / `Rotterdam (RWG)` / `Rotterdam (DDE)` …
    不归一会把同一港口拆成多个图节点，**直接破坏连通性**。
-   `route_finder.py` 里做了归一（去掉 `(码头)` 括号后缀 + 统一大小写 + 别名表），
-   节点数从 400 降到 301，路线搜索才正常。
+   `quote_optimizer.py` 里做了归一（去掉 `(码头)` 括号后缀 + 统一大小写 + 别名表），
+   节点数从 400 降到约 300，路线搜索才正常。
 
 6. **抓取要稳：限速 + 增量存盘 + 断点续抓 + 浏览器重启。**
    - 请求间隔 ~0.8–1.5s，礼貌限速；
@@ -86,8 +86,23 @@
 ```bash
 node crawl.mjs           # 航线 + 路线表 + 优势 → cosco_routes_raw.json
 node crawl_transit.mjs   # 运输时间表          → cosco_transit_raw.json
-python3 build_xlsx.py    # 合成 Excel
+python3 gen_mock_rates.py # 生成模拟运价骨架
+python3 build_master.py  # 合成单一工作簿
 ```
 
 > 反爬随时间变化；若 `crawl*.mjs` 失效，先确认仍在用系统真实 Chrome（`channel:'chrome'`）
 > 且带 `--disable-blink-features=AutomationControlled`。
+
+## 运价与认证调查(为什么运价是模拟的)
+
+抓完航线后,尝试抓【订舱运价】,结论:**无法自动获取真实运价**,原因是账号权限,非技术。
+
+- **即期运价(SPOT)对未认证账号一律返回 0 条产品** —— 测了 上海→洛杉矶、宁波→鹿特丹、南沙→胡志明 等多条主干线,`totalElements:0`。是账号级封锁,不是某条线没货。
+- 平台数据接口:端口自动补全 `/api/common/city/autoCompleteByFullName`、即期运价 `POST /api/product-search/client/spot/{箱型}/list`,均需每请求一次性 `FECU` 令牌(不可复用),且空结果。
+- **企业认证**(`elines.../personalCenter/applyAuth`)需:身份证 + **营业执照/统一社会信用代码** + 企业银行账号 + 联系人,且人工审批。另有 **7 天试用** 与 **关联已认证企业** 两条较轻的路径。
+- 未认证账号能看到的"产品概览"只是营销介绍页,无价格。
+- 真实运价的可行来源:**货代**、**COSCO 销售/中小客户专线**、或认证账号的 `My Orders → 导出Excel`。
+
+**driving 工具**:这一段用 `playwright-cli`(持久化 profile,登录一次后跨命令驱动已登录会话)比一次性脚本更顺手 —— 适合未知的、需登录的交互式探索。批量抓 JSON 接口仍是脚本更合适。
+
+**模拟运价标定**:真实产品 上海→Chicago 25天 20GP=$4,375 ⇒ $175/运输天;40GP/40HQ 倍率 1.086(同一产品)。可信形状,非预测。

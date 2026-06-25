@@ -1,3 +1,8 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# COSCO 官方 PDF —— 版权原因不纳入公开仓库(本地保留)
+how-tos/
+# UN/LOCODE 公共数据集 —— 体积大、可自行下载(见 README)
+unlocode_reference.csv

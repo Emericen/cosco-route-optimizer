@@ -1,0 +1,303 @@
+canonical,unlocode,country,src
+Abidjan,CIABJ,CI,auto
+Abu Dhabi,AEAUH,AE,auto
+Acajutla,SVAQJ,SV,auto
+Adelaide,AUADL,AU,auto
+Ajman,AEAJM,AE,auto
+Alexandria,USAXR,US,auto
+Algeciras,ESALG,ES,auto
+Algecirus,ESALG,ES,known
+Alger,DZALG,DZ,known
+Aliaga,TRALI,TR,auto
+Altamira,MXATM,MX,known
+Ancona,ITAOI,IT,auto
+Antwerp,BEANR,BE,known
+Apapa,NGAPP,NG,auto
+Aqaba,JOAQJ,JO,known
+Arica,CLARI,CL,known
+Ashdod,ILASH,IL,auto
+Auckland,NZAKL,NZ,auto
+Bahrain,,,REVIEW(badcode)
+Balboa,PABLB,PA,known
+Baltimore,USBAL,US,known
+Bangkok,THBKK,TH,auto
+Barcelona,ESBCN,ES,auto
+Bari,ITBRI,IT,auto
+Barranquilla,COBAQ,CO,auto
+Beira,MZBEW,MZ,auto
+Beirut,LBBEY,LB,auto
+Bell Bay,AUBEL,AU,auto
+Bilbao,ESBIO,ES,auto
+Boston,USBOS,US,known
+Bremerhaven,DEBRV,DE,auto
+Brisbane,AUBNE,AU,auto
+Buenaventura,COBUN,CO,auto
+Buenos Aires,ARBUE,AR,auto
+Busan,KRPUS,KR,auto
+Cai Mep,VNTOT,VN,auto
+Callao,PECLL,PE,auto
+Cape Town,ZACPT,ZA,auto
+Capetown,ZACPT,ZA,auto
+Cartagena,,,REVIEW(ambiguous)
+Casablanca,MACAS,MA,auto
+Caucedo,DOCAU,DO,auto
+Cct,,,REVIEW(ambiguous)
+Cebu,PHCEB,PH,auto
+Chancay,PECHY,PE,auto
+Charleston,USCHS,US,known
+Chennai,INMAA,IN,known
+Chittagong,BDCGP,BD,known
+Colombo,LKCMB,LK,auto
+Colon,,,REVIEW(ambiguous)
+Colon Container T.,,,REVIEW(ambiguous)
+Constanta,ROCND,RO,auto
+Corinto,NICIO,NI,auto
+Cotonou,BJCOO,BJ,auto
+Da Nang,VNDAD,VN,auto
+Dakar,SNDKR,SN,auto
+Dalian,CNDAL,CN,auto
+Dameitta,EGDAM,EG,known
+Damietta,EGDAM,EG,known
+Dammam,SADMM,SA,known
+Damman,SADMM,SA,known
+Danang,VNDAD,VN,auto
+Dar Es Salaam,TZDAR,TZ,auto
+Darwin,AUDRW,AU,auto
+Davao,PHDVO,PH,known
+Derince,TRDRC,TR,auto
+Djibouti,DJJIB,DJ,known
+Dublin,IEDUB,IE,known
+Dunkerque,FRDKK,FR,auto
+Dunkirk,USDKK,US,auto
+Durban,ZADUR,ZA,auto
+Durres,ALDRZ,AL,auto
+Ensenada,MXESE,MX,auto
+Felixstowe,GBFXT,GB,auto
+Fos,FRFOS,FR,known
+Fremantle,AUFRE,AU,auto
+Gdansk,PLGDN,PL,auto
+Gdynia,PLGDY,PL,auto
+Gebze,TRGEB,TR,auto
+Gemlik,TRGEM,TR,auto
+Genoa,ITGOA,IT,known
+Genova,ITGOA,IT,auto
+Georgetown,,,REVIEW(ambiguous)
+Gijon,ESGIJ,ES,auto
+Gothenborg,SEGOT,SE,known
+Guayaquil,ECGYE,EC,auto
+Hai Phong,VNHPH,VN,auto
+Haifa,ILHFA,IL,auto
+Haiphong,VNHPH,VN,auto
+Halifax,CAHAL,CA,auto
+Hamad,QAHMD,QA,known
+Hamburg,DEHAM,DE,auto
+Hamburg Cta,DEHAM,DE,known
+Hamburg Ctb,DEHAM,DE,known
+Hamburg Ctt,DEHAM,DE,known
+Hamburg Eurogate,DEHAM,DE,known
+Hazira,,,REVIEW(badcode)
+Helsingki,FIHEL,FI,known
+Helsinki,FIHEL,FI,auto
+Ho Chi Minh,VNSGN,VN,known
+Hochiminh,VNSGN,VN,known
+Hong Kong,HKHKG,HK,auto
+Hongkong,HKHKG,HK,known
+Houston,USHOU,US,auto
+Imbituba,BRIBB,BR,auto
+Incheon,KRINC,KR,auto
+Inchon,KRINC,KR,known
+Iquique,CLIQQ,CL,auto
+Iskenderun,TRISK,TR,auto
+Istanbul,TRIST,TR,auto
+Itapoa,BRIOA,BR,auto
+Izmit,TRIZT,TR,known
+Jakarta,IDJKT,ID,known
+Jebel Ali,AEJEA,AE,auto
+Jeddah,SAJED,SA,auto
+Jiangyin,CNJGY,CN,auto
+Jubail,SAJUB,SA,auto
+Kao Hsiung,TWKHH,TW,auto
+Kaohsiung,TWKHH,TW,auto
+Kaosiung,TWKHH,TW,known
+Karachi,PKKHI,PK,auto
+Kattupalli,INKAT,IN,auto
+Keelung,TWKEL,TW,known
+Khalifa,AEKHL,AE,known
+Kingston,JMKIN,JM,known
+Klaipeda,LTKLJ,LT,auto
+Kobe,JPUKB,JP,auto
+Kolkata,INCCU,IN,known
+Koper,SIKOP,SI,auto
+Kotka,FIKTK,FI,auto
+Kribi,CMKBI,CM,auto
+Kumport,TRKMX,TR,auto
+Kwangyang,KRKWA,KR,auto
+La Spezia,ITSPE,IT,auto
+Lae,PGLAE,PG,auto
+Laem Chabang,THLCH,TH,auto
+Laemchabang,THLCH,TH,auto
+Lautoka,FJLTK,FJ,auto
+Lazaro Cardenas,MXLZC,MX,auto
+Le Haver,FRLEH,FR,known
+Le Havre,FRLEH,FR,auto
+Leam Chabang,THLCH,TH,known
+Lekki,NGLKK,NG,known
+Lianyungang,CNLYG,CN,auto
+Limassol,CYLMS,CY,auto
+Lirquen,CLLQN,CL,auto
+Lisbon,PTLIS,PT,known
+Liverpool,GBLIV,GB,known
+Lome,TGLFW,TG,auto
+London Gateway,GBLGP,GB,known
+Long Beach,USLGB,US,auto
+Los Angeles,USLAX,US,auto
+Luanda,AOLAD,AO,auto
+Lyttelton,NZLYT,NZ,auto
+Macapa,BRMCP,BR,known
+Malta,MTMLA,MT,known
+Manaus,BRMAO,BR,auto
+Manila,PHMNL,PH,auto
+Manila North,PHMNL,PH,known
+Manila South,PHMNL,PH,known
+Manzanillo,,,REVIEW(ambiguous)
+Manzanillo - Timsa,MXZLO,MX,known
+"Manzanillo, Mex",MXZLO,MX,known
+"Manzanillo, Pa",PAMIT,PA,known
+"Manzanillo,Pa",PAMIT,PA,known
+Maputo,MZMPM,MZ,auto
+Melbourne,AUMEL,AU,auto
+Mersin,TRMER,TR,auto
+Miami,USMIA,US,auto
+Mobile,USMOB,US,auto
+Moin,CRMOB,CR,auto
+Mombasa,KEMBA,KE,auto
+Montevideo,UYMVD,UY,auto
+Montreal,CAMTR,CA,auto
+Mundra,INMUN,IN,auto
+Nacala,MZMNC,MZ,auto
+Nagoya,JPNGO,JP,known
+Nansha,CNNSA,CN,known
+Napier,NZNPE,NZ,auto
+Napoli,ITNAP,IT,auto
+Navegantes,BRNVT,BR,auto
+New Orleans,USMSY,US,auto
+New York,USNYC,US,auto
+Nhava Sheva,INNSA,IN,known
+Nhave Sheva,INNSA,IN,known
+Ningbo,CNNBO,CN,auto
+Norfolk,USORF,US,auto
+Oakland,USOAK,US,auto
+Onne,NGONN,NG,auto
+Osaka,JPOSA,JP,auto
+Paita,PEPAI,PE,auto
+Panama Canal,,,REVIEW(ambiguous)
+Paramaribo,SRPBM,SR,auto
+Paranagua,BRPNG,BR,auto
+Pasir Gudang,MYPGU,MY,known
+Penang,MYPEN,MY,known
+Philadelphia,USPHL,US,auto
+Pipavav,INPAV,IN,known
+Piraeus,GRPIR,GR,auto
+Pointe Noire,CGPNR,CG,known
+Port Au Prince,HTPAP,HT,auto
+Port Everglades,USPEF,US,auto
+Port Kelang,MYPKG,MY,known
+Port Kelang North,MYPKG,MY,known
+Port Kelang West,MYPKG,MY,known
+Port Klang,MYPKG,MY,known
+Port Klang North,MYPKG,MY,known
+Port Klang West,MYPKG,MY,known
+Port Louis,MUPLU,MU,known
+Port Moresby,PGPOM,PG,auto
+Port Of Spain,TTPOS,TT,auto
+Port Qasim,,,REVIEW
+Port Said West,EGPSD,EG,known
+Posorja,ECPSJ,EC,auto
+Prince Rupert,CAPRR,CA,auto
+Puerto Caldera,CRPTC,CR,auto
+Puerto Cortes,HNPCR,HN,auto
+Puerto Quetzal,GTPRQ,GT,auto
+Pusan,KRPUS,KR,known
+Qingdao,CNQIN,CN,auto
+Qinzhou,CNQZH,CN,auto
+Quan Zhou,CNQZH,CN,known
+Quanzhou,CNQZH,CN,known
+Ravenna,ITRAN,IT,auto
+Riga,LVRIX,LV,auto
+Rijeka,HRRJK,HR,auto
+Rio De Janeiro,BRRIO,BR,auto
+Rio Hania,DOHAI,DO,known
+Rizhao,CNRZH,CN,auto
+Rotterdam,NLRTM,NL,known
+Safi,MASFI,MA,auto
+Salerno,ITSAL,IT,auto
+Salvador De Bahia,BRSSA,BR,known
+San Antonio,CLSAI,CL,known
+San Juan,PRSJU,PR,known
+San Lorenzo,,,REVIEW(ambiguous)
+Santo Tomas De Castilla,GTSTC,GT,known
+Santos,BRSSZ,BR,auto
+Savannah,USSAV,US,known
+Seattle,USSEA,US,auto
+Semarang,IDSRG,ID,auto
+Shanghai,CNSGH,CN,auto
+Shantou,CNSTG,CN,auto
+Sharjah,AESHJ,AE,auto
+Shekou,CNSHK,CN,known
+Shimizu,JPSMZ,JP,auto
+Shuaiba,KWSAA,KW,auto
+Shuwaikh,KWSWK,KW,auto
+Sihanouk Ville,KHKOS,KH,known
+Sihanoukville,KHKOS,KH,known
+Singapore,SGSIN,SG,auto
+Singapre,SGSIN,SG,known
+Sohar,OMSOH,OM,auto
+Sokhna,EGSOK,EG,known
+Southampton,GBSOU,GB,known
+Subic,PHSBI,PH,auto
+Surabaya,IDSUB,ID,auto
+Suva,FJSUV,FJ,auto
+Sydney,AUSYD,AU,known
+Tacoma,USTIW,US,auto
+Taichung,TWTXG,TW,auto
+Taipei,TWTPE,TW,auto
+Tallin,EETLL,EE,known
+Tampa,USTPA,US,auto
+Tanger Med,MAPTM,MA,auto
+Tangier,MATNG,MA,auto
+Tanjung Pelepas,MYTPP,MY,auto
+Tauranga,NZTRG,NZ,auto
+Teesport,GBTEE,GB,auto
+Tema,GHTEM,GH,auto
+Tianjin,CNTNJ,CN,auto
+Tibury,GBTIL,GB,known
+Tilbury,GBTIL,GB,known
+Tincan,NGTIN,NG,known
+Tokyo,JPTYO,JP,auto
+Townsville,AUTSV,AU,auto
+Trieste,ITTRS,IT,auto
+Umm Qasr,IQUQR,IQ,known
+Vado Ligure,ITVDL,IT,auto
+Valencia,ESVLC,ES,auto
+Valparaiso,CLVAP,CL,auto
+Vancouver,CAVAN,CA,known
+Varna,BGVAR,BG,auto
+Venice,USVN3,US,auto
+Veracruz,MXVER,MX,auto
+Vila Do Conde,PTVIC,PT,auto
+Vizag,INVTZ,IN,known
+Vung Tau,VNVUT,VN,auto
+Walvis Bay,NAWVB,NA,auto
+Wellington,NZWLG,NZ,known
+Wilhelmshaven,DEWVN,DE,auto
+Xiamen,CNXAM,CN,auto
+Xiao Chan Tan,,,REVIEW(ambiguous)
+Xingang,CNTXG,CN,known
+Yangon,MMRGN,MM,auto
+Yangpu,CNYPG,CN,known
+Yantai,CNYAT,CN,auto
+Yantian,CNYTN,CN,known
+Yilport,TRYPO,TR,auto
+Yokkaichi,JPYKK,JP,auto
+Yokohama,JPYOK,JP,auto
+Zeebrugge,BEZEE,BE,auto
