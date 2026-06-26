@@ -17,7 +17,9 @@ RATE_PER_DAY_20GP = 175          # 锚定 上海→Chicago 真实产品
 BOX_MULT = {'20GP':1.00, '40GP':1.086, '40HQ':1.086,   # 干货箱
             '40RF':2.00,                                # 冷藏箱(溢价~2x)
             '40OT':1.35, '40FR':1.45}                   # 开顶/框架(超规溢价)
-SURCHARGE_USD = 150              # 海运附加费打包(THC/订舱费等)的粗略值/箱
+SEA_SURCHARGE_USD  = 50   # 海运附加费(AQS/CAS/CBX),按【每个航段】计;中转有2段→各算一遍
+BOOKING_ORIGIN_USD = 200  # 订舱费+起运地附加费(THC/港务/码头安保),按【每次订舱】计
+                          #   关键: 中转 = 2 次订舱 → 这部分要算【两遍】(优化器里每段都加一次)
 DOOR_ORIGIN_USD = {'20':300, '40':380}   # 起运地拖车(门到... )
 DOOR_DEST_USD   = {'20':400, '40':500}   # 目的地拖车(...到门)
 VALIDITY = "MOCK (replace with real 运价有效期)"
@@ -51,11 +53,11 @@ def main():
 
     # 1) 海运边运价(每条 O-D 边 × 箱型)
     with open(os.path.join(HERE,'ocean_edges_MOCK.csv'),'w',newline='') as f:
-        w=csv.writer(f); w.writerow(['起运港','目的港','箱型','海运费USD','附加费USD','运输天数','运价有效期','数据来源'])
+        w=csv.writer(f); w.writerow(['起运港','目的港','箱型','海运费USD','海运附加费USD','订舱起运地费USD','运输天数','运价有效期','数据来源'])
         for (A,B),d in sorted(edge_days.items()):
             for box,m in BOX_MULT.items():
                 ocean=round(RATE_PER_DAY_20GP*d*m, -1)   # round to 10
-                w.writerow([A,B,box,int(ocean),SURCHARGE_USD,d,VALIDITY,'MOCK'])
+                w.writerow([A,B,box,int(ocean),SEA_SURCHARGE_USD,BOOKING_ORIGIN_USD,d,VALIDITY,'MOCK'])
 
     # 2) 港口拖车费(门到门/门到港/港到门 用)
     ports=sorted({p for e in edge_days for p in e})

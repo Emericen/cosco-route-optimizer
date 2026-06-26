@@ -55,16 +55,17 @@ def load_graph():
     return adj, sorted(ports)
 
 def load_rates():
-    ocean={}  # (A,B,box) -> (oceanUSD, surchargeUSD)
+    ocean={}  # (A,B,box) -> (海运费, 海运附加费, 订舱起运地费)  —— 每段(=每次订舱)都收一遍
     for r in csv.DictReader(open(os.path.join(HERE,'ocean_edges_MOCK.csv'))):
-        ocean[(r['起运港'],r['目的港'],r['箱型'])]=(int(r['海运费USD']),int(r['附加费USD']))
+        ocean[(r['起运港'],r['目的港'],r['箱型'])]=(int(r['海运费USD']),int(r['海运附加费USD']),int(r['订舱起运地费USD']))
     door={}   # port -> dict
     for r in csv.DictReader(open(os.path.join(HERE,'door_charges_MOCK.csv'))):
         door[r['港口']]={'o20':int(r['起运拖车20USD']),'o40':int(r['起运拖车40USD']),
                          'd20':int(r['目的拖车20USD']),'d40':int(r['目的拖车40USD'])}
     return ocean, door
 
-TRANSSHIP_HANDLING=200; TRANSSHIP_DWELL=2
+# 中转操作费(在中转港掏箱/换船的物理操作),按【每次中转】计;订舱/起运地费的"翻倍"已在每段单独计入
+TRANSSHIP_HANDLING=100; TRANSSHIP_DWELL=2   # 中转等待天数(等下一班船),按每次中转计
 
 def resolve(q, ports):
     c=canon(q)
@@ -77,9 +78,9 @@ def find(adj, ocean, door, A, B, box, service, priority, max_transship, k):
     def door_cost(port, side):  # side 'o' origin / 'd' dest
         d=door.get(port);
         return d[side+sz] if d else 0
-    def legcost(frm,to):
+    def legcost(frm,to):   # 每一段=一次订舱: 海运费 + 海运附加费 + 订舱起运地费(中转有2段→订舱起运地费自然算两遍)
         v=ocean.get((frm,to,box))
-        return (v[0]+v[1]) if v else None
+        return (v[0]+v[1]+v[2]) if v else None
     max_legs=max_transship+1
     # state: (key, ctr, days, cost, transship, port, last_svc, path)
     ctr=0
@@ -97,7 +98,7 @@ def find(adj, ocean, door, A, B, box, service, priority, max_transship, k):
             extra=0
             if service in ('DD','DP'): extra+=door_cost(A,'o')
             if service in ('DD','PD'): extra+=door_cost(B,'d')
-            out.append({'days':days+(TRANSSHIP_DWELL*tx),'cost':cost+extra,'transship':tx,
+            out.append({'days':days,'cost':cost+extra,'transship':tx,   # days 已含中转等待,勿重复加
                         'legs':path,'door':extra})
             continue
         if len(path)>=max_legs: continue

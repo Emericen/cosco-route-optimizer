@@ -46,13 +46,14 @@ for x in sorted(routes,key=lambda r:(r['tradeUuid'],r['groupCn'] or '',r['serLpC
     ws3.append([tc,x['groupCn'],x['serLpCode'],x['nameCn'],len(lg),ports[0] if ports else '',ports[-1] if ports else '',max(times) if times else '',clean(x['advantage'].get('advantageContext') if x['advantage'] else '')])
 head(ws3,9); ws3.column_dimensions['I'].width=55
 ws4=wb.create_sheet('④ 运价表 Rates (MOCK)')
-ws4.append(['集装箱类别','箱型','起运港','目的地','海运费USD','附加费USD','起运拖车USD','目的拖车USD',
+ws4.append(['集装箱类别','箱型','起运港','目的地','海运费USD','海运附加费USD','订舱起运地费USD','起运拖车USD','目的拖车USD',
             '港到港PP_USD','门到港DP_USD','港到门PD_USD','门到门DD_USD','运输天数','运价有效期','数据来源'])
 door={r['港口']:r for r in csv.DictReader(open('door_charges_MOCK.csv'))}; CAT={'20GP':'干货箱','40GP':'干货箱','40HQ':'干货箱','40RF':'冷藏箱','40OT':'开顶箱','40FR':'框架箱'}
 for r in csv.DictReader(open('ocean_edges_MOCK.csv')):
-    box=r['箱型']; sz='20' if box.startswith('20') else '40'; A,B=r['起运港'],r['目的港']; oc=int(r['海运费USD']); su=int(r['附加费USD'])
+    box=r['箱型']; sz='20' if box.startswith('20') else '40'; A,B=r['起运港'],r['目的港']
+    oc=int(r['海运费USD']); sea=int(r['海运附加费USD']); bk=int(r['订舱起运地费USD'])
     ot=int(door.get(A,{}).get(f'起运拖车{sz}USD',0) or 0); dt=int(door.get(B,{}).get(f'目的拖车{sz}USD',0) or 0)
-    pp=oc+su  # 港到港 = 海运费+附加费;门到门/门到港/港到门 在此基础上加拖车
-    ws4.append([CAT[box],box,A,B,oc,su,ot,dt, pp, pp+ot, pp+dt, pp+ot+dt, int(r['运输天数']),r['运价有效期'],'MOCK'])
-head(ws4,15)
+    pp=oc+sea+bk  # 单条直达=1次订舱; 港到港=海运费+海运附加费+订舱起运地费(中转方案的两遍订舱由 quote_optimizer 体现)
+    ws4.append([CAT[box],box,A,B,oc,sea,bk,ot,dt, pp, pp+ot, pp+dt, pp+ot+dt, int(r['运输天数']),r['运价有效期'],'MOCK'])
+head(ws4,16)
 wb.save('COSCO_航线与运价_汇总_2026-06-23.xlsx'); print('saved unified workbook,',len(wb.sheetnames),'tabs')
